@@ -1,9 +1,9 @@
 {
-    "routes": [
-        {"src": "/mens", "dest":"/"},
-        {"src": "/womens", "dest":"/"},
-        {"src": "/kids", "dest":"/"},
-        {"src": "/cart", "dest":"/"},
-        {"src": "/products/:productId", "dest":"/"}
-    ]
+  "version": 2,
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "installCommand": "npm install",
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
 }
